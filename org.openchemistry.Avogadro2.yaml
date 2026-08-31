@@ -75,7 +75,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/openbabel/openbabel.git
-        commit: 5046ed24e1c33180537715e0204f3111125eb595
+        commit: 0e94434fa75c9f61095023e3c12e0d5f2ac035ff
 
   - name: avogadro2
     buildsystem: cmake-ninja
@@ -94,7 +94,7 @@ modules:
       # Clone but not recursively, only want CMake files and dir structure
       - type: git
         url: https://github.com/OpenChemistry/openchemistry.git
-        commit: 486851dbf51d18fe13961e69002f0782e18d2e54
+        commit: 58e2716fc1e40b8ab8dbb9d89e619e1434ba47b9
         disable-shallow-clone: true
         disable-submodules: true
 
@@ -102,17 +102,17 @@ modules:
       # avogadroapp
       - type: git
         url: https://github.com/OpenChemistry/avogadroapp.git
-        commit: 0bff7191b82626eb32cc07515a62598c646fee93
+        commit: b1e3fece5d882d9850ddfc89ceb95c74b9375e5b
         dest: avogadroapp
       # avogadrolibs
       - type: git
         url: https://github.com/OpenChemistry/avogadrolibs.git
-        commit: 6f8a46b75c2fd3703fb7546a6155cb43c469cca1
+        commit: 20ccd76f84af41b5b30350a98d4b3ee5c160857f
         dest: avogadrolibs
       # avogadro-i18n
       - type: git
         url: https://github.com/OpenChemistry/avogadro-i18n.git
-        commit: 9de016ed42dab96ed6ecbae29882edb2714f1ab8
+        commit: 4950610942b44ba24c8ad8933fb3a975fb4ebad1
         dest: avogadro-i18n
       # crystals
       - type: git
@@ -144,13 +144,13 @@ modules:
       # glew
       # (Should be able to use shared module but not picked up for whatever reason)
       - type: file
-        url: https://github.com/nigels-com/glew/releases/download/glew-2.2.0/glew-2.2.0.tgz
-        sha256: d4fc82893cfb00109578d0a1a2337fb8ca335b3ceccf97b97e5cc7f08e4353e1
+        url: https://github.com/nigels-com/glew/releases/download/glew-2.3.1/glew-2.3.1.tgz
+        sha256: b64790f94b926acd7e8f84c5d6000a86cb43967bd1e688b03089079799c9e889
         dest: Downloads
       # Eigen3
       - type: file
-        url: https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz
-        sha256: 8586084f71f9bde545ee7fa6d00288b264a2b7ac3607b974e54d13e7162c1c72
+        url: https://gitlab.com/libeigen/eigen/-/archive/3.4.1/eigen-3.4.1.tar.gz
+        sha256: b93c667d1b69265cdb4d9f30ec21f8facbbe8b307cf34c0b9942834c6d4fdbe2
         dest: Downloads
       # spglib
       - type: file
@@ -159,8 +159,8 @@ modules:
         dest: Downloads
       # libarchive
       - type: file
-        url: https://github.com/libarchive/libarchive/archive/v3.8.7.tar.gz
-        sha256: bc942030fe7cb30e04eed31bd5f63c38cdfd712315b303e91b64e58f05db2346
+        url: https://github.com/libarchive/libarchive/archive/v3.8.9.tar.gz
+        sha256: 744346f6bca195c8f894f847bb32a16e9bcae6002624a58fadc81e80f595b3cb
         dest: Downloads
       # libmsym
       - type: file
